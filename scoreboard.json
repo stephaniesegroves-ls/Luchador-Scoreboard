@@ -1,0 +1,248 @@
+{
+  "groups": [
+    /* 3rd hour teams */
+    { "id": "argentina__hour3",  "name": "Argentina (3rd)",  "color": "#00E5FF", "motto": "¡Vamos!",          "hour": "hour3" },
+    { "id": "chile__hour3",      "name": "Chile (3rd)",      "color": "#FF2BD6", "motto": "Fuerza roja",    "hour": "hour3" },
+    { "id": "costa_rica__hour3", "name": "Costa Rica (3rd)", "color": "#39FF14", "motto": "Pura vida",     "hour": "hour3" },
+    { "id": "panama__hour3",     "name": "Panamá (3rd)",     "color": "#FFD000", "motto": "Puente del mundo", "hour": "hour3" },
+    { "id": "spain__hour3",      "name": "España (3rd)",     "color": "#FF5E00", "motto": "La furia",       "hour": "hour3" },
+    { "id": "uruguay__hour3",    "name": "Uruguay (3rd)",    "color": "#00FFC6", "motto": "Garra charrúa",  "hour": "hour3" },
+    { "id": "honduras__hour3",   "name": "Honduras (3rd)",   "color": "#7C3AED", "motto": "Corazón catracho", "hour": "hour3" },
+
+    /* 4th hour teams */
+    { "id": "argentina__hour4",  "name": "Argentina (4th)",  "color": "#00E5FF", "motto": "¡Vamos!",          "hour": "hour4" },
+    { "id": "chile__hour4",      "name": "Chile (4th)",      "color": "#FF2BD6", "motto": "Fuerza roja",    "hour": "hour4" },
+    { "id": "costa_rica__hour4", "name": "Costa Rica (4th)", "color": "#39FF14", "motto": "Pura vida",     "hour": "hour4" },
+    { "id": "panama__hour4",     "name": "Panamá (4th)",     "color": "#FFD000", "motto": "Puente del mundo", "hour": "hour4" },
+    { "id": "spain__hour4",      "name": "España (4th)",     "color": "#FF5E00", "motto": "La furia",       "hour": "hour4" },
+    { "id": "uruguay__hour4",    "name": "Uruguay (4th)",    "color": "#00FFC6", "motto": "Garra charrúa",  "hour": "hour4" },
+    { "id": "honduras__hour4",   "name": "Honduras (4th)",   "color": "#7C3AED", "motto": "Corazón catracho", "hour": "hour4" },
+
+    /* Zion Lutheran teams */
+    { "id": "spain__zion",       "name": "España (Zion)",    "color": "#FF5E00", "motto": "La furia",       "hour": "zion" },
+    { "id": "cuba__zion",        "name": "Cuba (Zion)",      "color": "#FF006E", "motto": "Ritmo y sabor",   "hour": "zion" },
+    { "id": "argentina__zion",   "name": "Argentina (Zion)", "color": "#00E5FF", "motto": "¡Vamos!",          "hour": "zion" },
+
+    /* HS 5th / MS 6th hour teams */
+    { "id": "argentina__hs5_ms6",  "name": "Argentina (HS5/MS6)", "color": "#00E5FF", "motto": "¡Vamos!",          "hour": "hs5_ms6" },
+    { "id": "chile__hs5_ms6",      "name": "Chile (HS5/MS6)",     "color": "#FF2BD6", "motto": "Fuerza roja",    "hour": "hs5_ms6" },
+    { "id": "costa_rica__hs5_ms6", "name": "Costa Rica (HS5/MS6)","color": "#39FF14", "motto": "Pura vida",     "hour": "hs5_ms6" },
+    { "id": "panama__hs5_ms6",     "name": "Panamá (HS5/MS6)",   "color": "#FFD000", "motto": "Puente del mundo", "hour": "hs5_ms6" },
+    { "id": "spain__hs5_ms6",      "name": "España (HS5/MS6)",   "color": "#FF5E00", "motto": "La furia",       "hour": "hs5_ms6" },
+    { "id": "uruguay__hs5_ms6",    "name": "Uruguay (HS5/MS6)",  "color": "#00FFC6", "motto": "Garra charrúa",  "hour": "hs5_ms6" }
+  ],
+  "powerups": [
+    {
+      "id": "focus_boost",
+      "label": "Focus Boost",
+      "effect": "+2 on next quiz"
+    },
+    {
+      "id": "vocab_master",
+      "label": "Vocab Master",
+      "effect": "Skip one vocab retake"
+    },
+    {
+      "id": "boss_shield",
+      "label": "Boss Shield",
+      "effect": "Protection in boss battle"
+    },
+    {
+      "id": "team_crown",
+      "label": "Team Crown",
+      "effect": "+10 group bonus"
+    }
+  ],
+  "students": [
+    /* -------- 3rd Hour -------- */
+    { "id": "s-001", "name": "Cailyn",        "groupId": "argentina__hour3",  "classId": "hour3",   "code": "H3-ARG-1",  "powerups": [], "level": 1 },
+    { "id": "s-002", "name": "Carson",        "groupId": "argentina__hour3",  "classId": "hour3",   "code": "H3-ARG-2",  "powerups": [], "level": 1 },
+    { "id": "s-003", "name": "Keegan",        "groupId": "argentina__hour3",  "classId": "hour3",   "code": "H3-ARG-3",  "powerups": [], "level": 1 },
+    { "id": "s-004", "name": "Sadie",         "groupId": "argentina__hour3",  "classId": "hour3",   "code": "H3-ARG-4",  "powerups": [], "level": 1 },
+
+    { "id": "s-005", "name": "Harold",        "groupId": "chile__hour3",      "classId": "hour3",   "code": "H3-CHI-1",  "powerups": [], "level": 1 },
+    { "id": "s-006", "name": "Leland",        "groupId": "chile__hour3",      "classId": "hour3",   "code": "H3-CHI-2",  "powerups": [], "level": 1 },
+    { "id": "s-007", "name": "Peyton S",      "groupId": "chile__hour3",      "classId": "hour3",   "code": "H3-CHI-3",  "powerups": [], "level": 1 },
+    { "id": "s-008", "name": "Skilynn",       "groupId": "chile__hour3",      "classId": "hour3",   "code": "H3-CHI-4",  "powerups": [], "level": 1 },
+    { "id": "s-009", "name": "Starlet",       "groupId": "chile__hour3",      "classId": "hour3",   "code": "H3-CHI-5",  "powerups": [], "level": 1 },
+
+    { "id": "s-010", "name": "Amelia",        "groupId": "costa_rica__hour3", "classId": "hour3",   "code": "H3-CRI-1",  "powerups": [], "level": 1 },
+    { "id": "s-011", "name": "Jasper",        "groupId": "costa_rica__hour3", "classId": "hour3",   "code": "H3-CRI-2",  "powerups": [], "level": 1 },
+    { "id": "s-012", "name": "Kayden S",      "groupId": "costa_rica__hour3", "classId": "hour3",   "code": "H3-CRI-3",  "powerups": [], "level": 1 },
+    { "id": "s-013", "name": "Maliyah",       "groupId": "costa_rica__hour3", "classId": "hour3",   "code": "H3-CRI-4",  "powerups": [], "level": 1 },
+    { "id": "s-014", "name": "Willow",        "groupId": "costa_rica__hour3", "classId": "hour3",   "code": "H3-CRI-5",  "powerups": [], "level": 1 },
+
+    { "id": "s-015", "name": "Alivia Ga",     "groupId": "panama__hour3",     "classId": "hour3",   "code": "H3-PAN-1",  "powerups": [], "level": 1 },
+    { "id": "s-016", "name": "Aubree M",      "groupId": "panama__hour3",     "classId": "hour3",   "code": "H3-PAN-2",  "powerups": [], "level": 1 },
+    { "id": "s-017", "name": "Henry M",       "groupId": "panama__hour3",     "classId": "hour3",   "code": "H3-PAN-3",  "powerups": [], "level": 1 },
+    { "id": "s-018", "name": "Peyton B",      "groupId": "panama__hour3",     "classId": "hour3",   "code": "H3-PAN-4",  "powerups": [], "level": 1 },
+
+    { "id": "s-019", "name": "Addison F",     "groupId": "spain__hour3",      "classId": "hour3",   "code": "H3-ESP-1",  "powerups": [], "level": 1 },
+    { "id": "s-020", "name": "Brooke",        "groupId": "spain__hour3",      "classId": "hour3",   "code": "H3-ESP-2",  "powerups": [], "level": 1 },
+    { "id": "s-021", "name": "Logan",         "groupId": "spain__hour3",      "classId": "hour3",   "code": "H3-ESP-3",  "powerups": [], "level": 1 },
+    { "id": "s-022", "name": "Onyx",          "groupId": "spain__hour3",      "classId": "hour3",   "code": "H3-ESP-4",  "powerups": [], "level": 1 },
+
+    { "id": "s-023", "name": "Alivya Ge",     "groupId": "uruguay__hour3",    "classId": "hour3",   "code": "H3-URU-1",  "powerups": [], "level": 1 },
+    { "id": "s-024", "name": "Bosstyn",       "groupId": "uruguay__hour3",    "classId": "hour3",   "code": "H3-URU-2",  "powerups": [], "level": 1 },
+    { "id": "s-025", "name": "Parker B",      "groupId": "uruguay__hour3",    "classId": "hour3",   "code": "H3-URU-3",  "powerups": [], "level": 1 },
+    { "id": "s-026", "name": "Taylin",        "groupId": "uruguay__hour3",    "classId": "hour3",   "code": "H3-URU-4",  "powerups": [], "level": 1 },
+
+    /* -------- 4th Hour -------- */
+    { "id": "s-027", "name": "Addyson L",     "groupId": "argentina__hour4",  "classId": "hour4",   "code": "H4-ARG-1",  "powerups": [], "level": 1 },
+    { "id": "s-028", "name": "Haylee B",      "groupId": "argentina__hour4",  "classId": "hour4",   "code": "H4-ARG-2",  "powerups": [], "level": 1 },
+    { "id": "s-029", "name": "Leia",          "groupId": "argentina__hour4",  "classId": "hour4",   "code": "H4-ARG-3",  "powerups": [], "level": 1 },
+    { "id": "s-030", "name": "Tucker",        "groupId": "argentina__hour4",  "classId": "hour4",   "code": "H4-ARG-4",  "powerups": [], "level": 1 },
+
+    { "id": "s-031", "name": "Dean",          "groupId": "chile__hour4",      "classId": "hour4",   "code": "H4-CHI-1",  "powerups": [], "level": 1 },
+    { "id": "s-032", "name": "Easton F",      "groupId": "chile__hour4",      "classId": "hour4",   "code": "H4-CHI-2",  "powerups": [], "level": 1 },
+    { "id": "s-033", "name": "McKinley",      "groupId": "chile__hour4",      "classId": "hour4",   "code": "H4-CHI-3",  "powerups": [], "level": 1 },
+    { "id": "s-034", "name": "Paige",         "groupId": "chile__hour4",      "classId": "hour4",   "code": "H4-CHI-4",  "powerups": [], "level": 1 },
+
+    { "id": "s-035", "name": "Bowen",         "groupId": "costa_rica__hour4", "classId": "hour4",   "code": "H4-CRI-1",  "powerups": [], "level": 1 },
+    { "id": "s-036", "name": "Joel",          "groupId": "costa_rica__hour4", "classId": "hour4",   "code": "H4-CRI-2",  "powerups": [], "level": 1 },
+    { "id": "s-037", "name": "Payton W",      "groupId": "costa_rica__hour4", "classId": "hour4",   "code": "H4-CRI-3",  "powerups": [], "level": 1 },
+    { "id": "s-038", "name": "Selah",         "groupId": "costa_rica__hour4", "classId": "hour4",   "code": "H4-CRI-4",  "powerups": [], "level": 1 },
+
+    { "id": "s-039", "name": "Charlotte",     "groupId": "panama__hour4",     "classId": "hour4",   "code": "H4-PAN-1",  "powerups": [], "level": 1 },
+    { "id": "s-040", "name": "Gabby",         "groupId": "panama__hour4",     "classId": "hour4",   "code": "H4-PAN-2",  "powerups": [], "level": 1 },
+    { "id": "s-041", "name": "Jackson Sc",    "groupId": "panama__hour4",     "classId": "hour4",   "code": "H4-PAN-3",  "powerups": [], "level": 1 },
+    { "id": "s-042", "name": "Natalie",       "groupId": "panama__hour4",     "classId": "hour4",   "code": "H4-PAN-4",  "powerups": [], "level": 1 },
+
+    { "id": "s-043", "name": "Addison T",     "groupId": "spain__hour4",      "classId": "hour4",   "code": "H4-ESP-1",  "powerups": [], "level": 1 },
+    { "id": "s-044", "name": "Easton E",      "groupId": "spain__hour4",      "classId": "hour4",   "code": "H4-ESP-2",  "powerups": [], "level": 1 },
+    { "id": "s-045", "name": "Noble",         "groupId": "spain__hour4",      "classId": "hour4",   "code": "H4-ESP-3",  "powerups": [], "level": 1 },
+    { "id": "s-046", "name": "Olivia",        "groupId": "spain__hour4",      "classId": "hour4",   "code": "H4-ESP-4",  "powerups": [], "level": 1 },
+
+    { "id": "s-047", "name": "Clara S",       "groupId": "uruguay__hour4",    "classId": "hour4",   "code": "H4-URU-1",  "powerups": [], "level": 1 },
+    { "id": "s-048", "name": "Nataleah",      "groupId": "uruguay__hour4",    "classId": "hour4",   "code": "H4-URU-2",  "powerups": [], "level": 1 },
+    { "id": "s-049", "name": "Neveah P",      "groupId": "uruguay__hour4",    "classId": "hour4",   "code": "H4-URU-3",  "powerups": [], "level": 1 },
+    { "id": "s-050", "name": "Reese",         "groupId": "uruguay__hour4",    "classId": "hour4",   "code": "H4-URU-4",  "powerups": [], "level": 1 },
+
+    { "id": "s-051", "name": "Kara",          "groupId": "honduras__hour4",   "classId": "hour4",   "code": "H4-HON-1",  "powerups": [], "level": 1 },
+    { "id": "s-052", "name": "Abagail",       "groupId": "honduras__hour4",   "classId": "hour4",   "code": "H4-HON-2",  "powerups": [], "level": 1 },
+    { "id": "s-053", "name": "Ellie",         "groupId": "honduras__hour4",   "classId": "hour4",   "code": "H4-HON-3",  "powerups": [], "level": 1 },
+    { "id": "s-054", "name": "Evan",          "groupId": "honduras__hour4",   "classId": "hour4",   "code": "H4-HON-4",  "powerups": [], "level": 1 },
+    { "id": "s-055", "name": "Easton B",      "groupId": "honduras__hour4",   "classId": "hour4",   "code": "H4-HON-5",  "powerups": [], "level": 1 },
+
+    /* -------- Zion Lutheran -------- */
+    { "id": "s-056", "name": "Ada",           "groupId": "spain__zion",       "classId": "zion",    "code": "Z-ESP-1",   "powerups": [], "level": 1 },
+    { "id": "s-057", "name": "Hannah",        "groupId": "spain__zion",       "classId": "zion",    "code": "Z-ESP-2",   "powerups": [], "level": 1 },
+    { "id": "s-058", "name": "Jordan",        "groupId": "spain__zion",       "classId": "zion",    "code": "Z-ESP-3",   "powerups": [], "level": 1 },
+    { "id": "s-059", "name": "Tommy",         "groupId": "spain__zion",       "classId": "zion",    "code": "Z-ESP-4",   "powerups": [], "level": 1 },
+
+    { "id": "s-060", "name": "Ruth",          "groupId": "cuba__zion",        "classId": "zion",    "code": "Z-CUB-1",   "powerups": [], "level": 1 },
+    { "id": "s-061", "name": "Emsley",        "groupId": "cuba__zion",        "classId": "zion",    "code": "Z-CUB-2",   "powerups": [], "level": 1 },
+    { "id": "s-062", "name": "Ellie",         "groupId": "cuba__zion",        "classId": "zion",    "code": "Z-CUB-3",   "powerups": [], "level": 1 },
+    { "id": "s-063", "name": "Hunter",        "groupId": "cuba__zion",        "classId": "zion",    "code": "Z-CUB-4",   "powerups": [], "level": 1 },
+
+    { "id": "s-064", "name": "Nora",          "groupId": "argentina__zion",   "classId": "zion",    "code": "Z-ARG-1",   "powerups": [], "level": 1 },
+    { "id": "s-065", "name": "Charlie",       "groupId": "argentina__zion",   "classId": "zion",    "code": "Z-ARG-2",   "powerups": [], "level": 1 },
+    { "id": "s-066", "name": "Colton",        "groupId": "argentina__zion",   "classId": "zion",    "code": "Z-ARG-3",   "powerups": [], "level": 1 },
+    { "id": "s-067", "name": "Cammie",        "groupId": "argentina__zion",   "classId": "zion",    "code": "Z-ARG-4",   "powerups": [], "level": 1 },
+    { "id": "s-068", "name": "Destiney",      "groupId": "argentina__zion",   "classId": "zion",    "code": "Z-ARG-5",   "powerups": [], "level": 1 },
+
+    /* -------- HS 5th / MS 6th -------- */
+    { "id": "s-069", "name": "Bram",          "groupId": "uruguay__hs5_ms6",  "classId": "hs5_ms6", "code": "H56-URU-1", "powerups": [], "level": 1 },
+    { "id": "s-070", "name": "Bryce",         "groupId": "uruguay__hs5_ms6",  "classId": "hs5_ms6", "code": "H56-URU-2", "powerups": [], "level": 1 },
+    { "id": "s-071", "name": "Delaney",       "groupId": "uruguay__hs5_ms6",  "classId": "hs5_ms6", "code": "H56-URU-3", "powerups": [], "level": 1 },
+    { "id": "s-072", "name": "Hazel",         "groupId": "uruguay__hs5_ms6",  "classId": "hs5_ms6", "code": "H56-URU-4", "powerups": [], "level": 1 },
+
+    { "id": "s-073", "name": "Amelia",        "groupId": "argentina__hs5_ms6","classId": "hs5_ms6", "code": "H56-ARG-1", "powerups": [], "level": 1 },
+    { "id": "s-074", "name": "Bentley M",     "groupId": "argentina__hs5_ms6","classId": "hs5_ms6", "code": "H56-ARG-2", "powerups": [], "level": 1 },
+    { "id": "s-075", "name": "Eric",          "groupId": "argentina__hs5_ms6","classId": "hs5_ms6", "code": "H56-ARG-3", "powerups": [], "level": 1 },
+    { "id": "s-076", "name": "Ozark",         "groupId": "argentina__hs5_ms6","classId": "hs5_ms6", "code": "H56-ARG-4", "powerups": [], "level": 1 },
+
+    { "id": "s-077", "name": "Breanna",       "groupId": "chile__hs5_ms6",    "classId": "hs5_ms6", "code": "H56-CHI-1", "powerups": [], "level": 1 },
+    { "id": "s-078", "name": "Cole J",        "groupId": "chile__hs5_ms6",    "classId": "hs5_ms6", "code": "H56-CHI-2", "powerups": [], "level": 1 },
+    { "id": "s-079", "name": "Logan S",       "groupId": "chile__hs5_ms6",    "classId": "hs5_ms6", "code": "H56-CHI-3", "powerups": [], "level": 1 },
+    { "id": "s-080", "name": "Rebecca",       "groupId": "chile__hs5_ms6",    "classId": "hs5_ms6", "code": "H56-CHI-4", "powerups": [], "level": 1 },
+    { "id": "s-081", "name": "Sage",          "groupId": "chile__hs5_ms6",    "classId": "hs5_ms6", "code": "H56-CHI-5", "powerups": [], "level": 1 },
+
+    { "id": "s-082", "name": "Cooper",        "groupId": "costa_rica__hs5_ms6","classId": "hs5_ms6","code": "H56-CRI-1", "powerups": [], "level": 1 },
+    { "id": "s-083", "name": "Jackson Sh",    "groupId": "costa_rica__hs5_ms6","classId": "hs5_ms6","code": "H56-CRI-2", "powerups": [], "level": 1 },
+    { "id": "s-084", "name": "Luca",          "groupId": "costa_rica__hs5_ms6","classId": "hs5_ms6","code": "H56-CRI-3", "powerups": [], "level": 1 },
+    { "id": "s-085", "name": "Sophia",        "groupId": "costa_rica__hs5_ms6","classId": "hs5_ms6","code": "H56-CRI-4", "powerups": [], "level": 1 },
+
+    { "id": "s-086", "name": "Gabe",          "groupId": "panama__hs5_ms6",   "classId": "hs5_ms6", "code": "H56-PAN-1", "powerups": [], "level": 1 },
+    { "id": "s-087", "name": "Jaylee",        "groupId": "panama__hs5_ms6",   "classId": "hs5_ms6", "code": "H56-PAN-2", "powerups": [], "level": 1 },
+    { "id": "s-088", "name": "Kameron",       "groupId": "panama__hs5_ms6",   "classId": "hs5_ms6", "code": "H56-PAN-3", "powerups": [], "level": 1 },
+    { "id": "s-089", "name": "Parker E",      "groupId": "panama__hs5_ms6",   "classId": "hs5_ms6", "code": "H56-PAN-4", "powerups": [], "level": 1 },
+
+    { "id": "s-090", "name": "Asher",         "groupId": "spain__hs5_ms6",    "classId": "hs5_ms6", "code": "H56-ESP-1", "powerups": [], "level": 1 },
+    { "id": "s-091", "name": "Everett",       "groupId": "spain__hs5_ms6",    "classId": "hs5_ms6", "code": "H56-ESP-2", "powerups": [], "level": 1 },
+    { "id": "s-092", "name": "Haley P",       "groupId": "spain__hs5_ms6",    "classId": "hs5_ms6", "code": "H56-ESP-3", "powerups": [], "level": 1 },
+    { "id": "s-093", "name": "Ryder",         "groupId": "spain__hs5_ms6",    "classId": "hs5_ms6", "code": "H56-ESP-4", "powerups": [], "level": 1 }
+  ],
+  "transactions": [
+    {
+      "studentId": "s-001",
+      "groupId": "titans",
+      "delta": 5,
+      "reason": "On-time + Prepared",
+      "date": "2025-09-02"
+    },
+    {
+      "studentId": "s-002",
+      "groupId": "phoenixes",
+      "delta": 8,
+      "reason": "Vocab Challenge",
+      "date": "2025-09-03"
+    },
+    {
+      "studentId": "s-003",
+      "groupId": "renegades",
+      "delta": 3,
+      "reason": "Participation",
+      "date": "2025-09-04"
+    },
+    {
+      "studentId": "s-001",
+      "groupId": "titans",
+      "delta": 2,
+      "reason": "Peer Help",
+      "date": "2025-09-05"
+    },
+    {
+      "studentId": "s-005",
+      "groupId": "titans",
+      "delta": 10,
+      "reason": "Boss Battle",
+      "date": "2025-09-06"
+    },
+    {
+      "studentId": "s-006",
+      "groupId": "legends",
+      "delta": 4,
+      "reason": "Listening Quiz",
+      "date": "2025-09-07"
+    },
+    {
+      "studentId": "s-002",
+      "groupId": "phoenixes",
+      "delta": -2,
+      "reason": "Late Work",
+      "date": "2025-09-08"
+    },
+    {
+      "studentId": "s-004",
+      "groupId": "legends",
+      "delta": 6,
+      "reason": "Teamwork",
+      "date": "2025-09-08"
+    },
+    {
+      "studentId": "s-003",
+      "groupId": "renegades",
+      "delta": 7,
+      "reason": "Reading Log",
+      "date": "2025-09-09"
+    },
+    {
+      "studentId": "s-005",
+      "groupId": "titans",
+      "delta": 1,
+      "reason": "Classroom Job",
+      "date": "2025-09-10"
+    }
+  ]
+}

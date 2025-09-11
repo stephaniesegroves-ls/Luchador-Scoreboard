@@ -1,0 +1,323 @@
+/*
+ * Classroom Scoreboard – Black & Neon Theme
+ *
+ * This stylesheet transforms the scoreboard into a dark, high‑contrast interface
+ * reminiscent of neon signage. Bold colours and glows are used throughout to
+ * amplify the Luchador ambience. The layout remains consistent with the
+ * original design but leverages CSS custom properties for ease of tuning.
+ */
+
+/* Colour variables for global theme. Adjust these to tune the neon palette. */
+:root {
+  /* Base colours */
+  --bg: #0a0f1a;            /* deep navy backdrop */
+  --text: #f8fafc;          /* near‑white text */
+  --muted: #94a3b8;         /* muted grey for secondary text */
+
+  /* Neon accents */
+  --neon-pink: #ff00c6;
+  --neon-cyan: #00c6ff;
+  --neon-orange: #ffaa00;
+  --neon-green: #00ff80;
+  --neon-purple: #7c3aed;
+
+  /* Additional neon for header highlight */
+  --neon-yellow: #ffd500;
+
+  /* Group colours mapping (mirror scoreboard_data) */
+  --titans: var(--neon-cyan);
+  --renegades: var(--neon-pink);
+  --phoenixes: var(--neon-orange);
+  --legends: var(--neon-green);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+  color: var(--text);
+  /* Layered radial gradients create subtle colour flares behind the dark surface */
+  background:
+    radial-gradient(1000px 500px at 15% -10%, rgba(255, 0, 198, 0.22) 0%, transparent 60%),
+    radial-gradient(900px 480px at 115% 110%, rgba(0, 198, 255, 0.25) 0%, transparent 60%),
+    radial-gradient(800px 420px at -10% 120%, rgba(255, 170, 0, 0.20) 0%, transparent 55%),
+    var(--bg);
+  min-height: 100vh;
+}
+
+/* Header with neon gradient and subtle glow */
+header {
+  background: linear-gradient(90deg, var(--neon-pink) 0%, var(--neon-cyan) 60%, var(--neon-purple) 100%);
+  color: white;
+  padding: 1.25rem 1rem 1.75rem;
+  text-align: center;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+  position: relative;
+  z-index: 2;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: 0.4px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header .small {
+  opacity: 0.95;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* Tab buttons with neon highlight */
+.tab-buttons {
+  display: flex;
+  border-bottom: 2px solid #1e293b;
+  margin-bottom: 1rem;
+}
+
+.tab-buttons button {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  background: none;
+  border: none;
+  border-bottom: 4px solid transparent;
+  cursor: pointer;
+  font-weight: 800;
+  color: #cbd5e1;
+  transition: border-color 0.2s, color 0.2s, transform 0.06s;
+}
+
+.tab-buttons button:hover {
+  color: var(--text);
+  transform: translateY(-1px);
+}
+
+.tab-buttons button.active {
+  border-bottom-color: var(--neon-yellow, var(--neon-orange));
+  /* Fallback uses neon-orange if neon-yellow isn't defined */
+  color: var(--text);
+}
+
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block;
+}
+
+/* Hero banner with a multicolour neon stripe behind frosted glass */
+.hero-banner {
+  margin: 1rem 0 1.25rem;
+  padding: 1rem 1.25rem;
+  border-radius: 16px;
+  background: linear-gradient(90deg,
+    rgba(255, 0, 198, 0.25) 0%,
+    rgba(255, 170, 0, 0.25) 33%,
+    rgba(0, 198, 255, 0.28) 66%,
+    rgba(0, 255, 128, 0.25) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35), inset 0 0 50px rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(4px);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 1.1rem;
+  letter-spacing: 0.3px;
+}
+
+.hero-text {
+  font-size: 0.95rem;
+  color: #e2e8f0;
+}
+
+/* Card styling for group, student and transaction components */
+.card {
+  background: linear-gradient(180deg, #0f172a, #0b1222);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.card h3 {
+  margin: 0.1rem 0 0.25rem;
+  font-size: 1.125rem;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+.card p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+  color: #dbeafe;
+}
+
+.small {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+/* Group accent stripes and tint backgrounds via data-group attribute */
+.group-accent {
+  border-left: 12px solid transparent;
+}
+.group-accent[data-group="titans"] {
+  border-left-color: var(--titans);
+  /* Tint background with semi-transparent cyan */
+  background-image: linear-gradient(90deg, rgba(0, 198, 255, 0.2), transparent 45%);
+}
+.group-accent[data-group="renegades"] {
+  border-left-color: var(--renegades);
+  background-image: linear-gradient(90deg, rgba(255, 0, 198, 0.2), transparent 45%);
+}
+.group-accent[data-group="phoenixes"] {
+  border-left-color: var(--phoenixes);
+  background-image: linear-gradient(90deg, rgba(255, 170, 0, 0.2), transparent 45%);
+}
+.group-accent[data-group="legends"] {
+  border-left-color: var(--legends);
+  background-image: linear-gradient(90deg, rgba(0, 255, 128, 0.2), transparent 45%);
+}
+
+/* Chips and badges for group names and powerups */
+.badge,
+.chip {
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 900;
+  color: #0a0f1a;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.35), inset 0 -2px 0 rgba(255, 255, 255, 0.22);
+}
+
+/* Colour chips by group ID (used for student badges) */
+.chip-blue {
+  background: var(--titans);
+}
+.chip-purple {
+  background: var(--renegades);
+}
+.chip-orange {
+  background: var(--phoenixes);
+}
+.chip-green {
+  background: var(--legends);
+}
+
+.powerups {
+  margin-top: 0.5rem;
+}
+
+.powerups .badge {
+  background: #94a3b8;
+  color: #0a0f1a;
+  margin-right: 0.35rem;
+  margin-bottom: 0.3rem;
+}
+
+input[type="text"],
+select {
+  padding: 0.6rem 0.7rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: #0b1222;
+  color: #e2e8f0;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  width: 100%;
+  max-width: 320px;
+  margin-bottom: 0.75rem;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.no-data {
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+/* Watermark shaped like a lucha mask rendered as overlapping circles */
+body::before {
+  content: '';
+  position: fixed;
+  right: -120px;
+  bottom: -100px;
+  width: 460px;
+  height: 460px;
+  background:
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.55) 0 30%, transparent 31%),
+    radial-gradient(circle at 35% 35%, rgba(255, 255, 255, 0.55) 0 20%, transparent 21%),
+    radial-gradient(circle at 65% 35%, rgba(255, 255, 255, 0.55) 0 20%, transparent 21%),
+    radial-gradient(circle at 50% 65%, rgba(255, 255, 255, 0.55) 0 14%, transparent 15%),
+    var(--neon-cyan);
+  filter: blur(6px) saturate(1.2);
+  opacity: 0.13;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Confetti canvas stays on top of all content */
+.confetti {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Pets row and chips for group cards */
+.pets-row {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.pet {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.06);
+  padding: 0.35rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  line-height: 1;
+  color: #e2e8f0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+}
+.pet .icon {
+  width: 20px;
+  height: 20px;
+  display: inline-grid;
+  place-items: center;
+  font-size: 16px;
+}
+.pet.locked {
+  opacity: 0.45;
+  filter: grayscale(1) contrast(0.85);
+  border-style: dashed;
+}
+.pet .name {
+  font-weight: 800;
+}
+.pet .thr {
+  font-size: 0.7rem;
+  opacity: 0.8;
+}
